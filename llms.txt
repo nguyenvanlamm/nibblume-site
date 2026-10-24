@@ -1,0 +1,20 @@
+# Nibblume
+
+> Nibblume is a game for iPhone played in black water: you are a tiny lanternfish. Hold Glow and small fish swim to your light, but hunters with red eyes see it too; let go to vanish. Eat smaller fish to grow. Coming soon to the App Store.
+
+- Controls: drag anywhere to swim; hold the Glow button (bottom right) or put down a second finger to light up. The belly lights drain while you glow and refill in the dark.
+- Goal: eat fish smaller than you to fill three arcs and grow through three sizes each dive, earning up to three stars. A bite above size 1 costs a size, not the dive.
+- Campaign: 36 dives in 3 zones (Twilight, Midnight, Abyss). Silver fish flee light, gulpers gape before they lunge, and on the last dive of each zone the Leviathan sweeps a warned band of water.
+- Boosters: Ink Veil hides you from hunters for 6 seconds; Spark Charge keeps a full, wider light for 8 seconds. Earn them with Glimmer from play, or buy a pack.
+- Price: the first 12 dives (Twilight) are free. Full Descent ($2.99, one-time) opens Midnight and Abyss. Optional booster packs: Glow Pouch ($0.99) and Glow Chest ($2.99). Restore Purchases is in Settings and the Shop.
+- No ads, no tracking, no account. Progress is stored only on the device, and the game plays offline. The game is in English.
+
+## Pages
+
+- [Home](https://nguyenvanlamm.github.io/nibblume-site/index.html.md): what the game is, how it plays, price and questions
+- [Support](https://nguyenvanlamm.github.io/nibblume-site/support.html.md): contact, how to play, purchases and restoring them, progress
+- [Privacy Policy](https://nguyenvanlamm.github.io/nibblume-site/privacy.html.md): what the game stores on the device and what it never collects
+
+## Optional
+
+- [Website](https://nguyenvanlamm.github.io/nibblume-site/): the HTML landing page
