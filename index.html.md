@@ -1,10 +1,12 @@
 # Nibblume: Glow to lure. Go dark to hide.
 
-A game for iPhone. **Coming soon to the App Store.**
-
 You are a tiny lanternfish in black water. Light up and small fish swim to you, but so do the **red eyes in the dark**. Eat to grow. Let go to vanish.
 
-iPhone · 12 dives free · no ads · plays offline
+A game for iPhone. **Coming soon to the App Store.**
+
+**No ads. No tracking. No account.**
+
+iPhone · 36 dives · first 12 free · offline
 
 ## Your light is bait. And a beacon.
 
@@ -19,13 +21,13 @@ iPhone · 12 dives free · no ads · plays offline
 3. **Watch for red eyes, then let go.** A hunter stares before it dashes. Go dark and it loses you.
 4. **Eat to fill three arcs.** Grow to full size to finish the dive and earn up to three stars.
 
-## One price, no ads
+## Free to start, no ads
 
 - **Twilight: Free.** The first 12 dives, Leviathan included.
 - **Full Descent: $2.99.** One purchase opens Midnight and Abyss: 24 more dives.
-- **Boosters: Optional.** Ink Veil hides you for 6 seconds; Spark Charge keeps a full, wider light for 8. Earn them with Glimmer, or buy a pack (Glow Pouch $0.99, Glow Chest $2.99).
+- **Boosters: Optional.** Ink Veil hides you for 6 seconds; Spark Charge keeps a full, wider light for 8. Earn them with Glimmer, or buy a pack: Glow Pouch $0.99, Glow Chest $2.99.
 
-No ads, no tracking, no account. Progress stays on your iPhone.
+No subscription. Progress stays on your iPhone.
 
 ## Questions
 
@@ -40,6 +42,12 @@ No. It plays offline; only purchases go through the App Store.
 
 **Will I lose my progress?**
 Progress is saved on your device. Purchases come back with *Settings → Restore Purchases*.
+
+## The red eyes are waiting.
+
+36 dives into the dark. The first 12 are free; $2.99 once opens the other 24.
+
+**Coming soon to the App Store.**
 
 ---
 

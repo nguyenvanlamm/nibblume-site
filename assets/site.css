@@ -32,24 +32,39 @@ a:focus-visible { outline: 2px solid var(--peri); outline-offset: 3px; border-ra
 .skip:focus { left: 16px; top: 16px; background: var(--peri); color: var(--ink0); padding: 8px 12px; z-index: 2; }
 
 header.top { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none;
+.brand { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--text); text-decoration: none;
   font: 500 22px/1 var(--serif); }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
-nav a { margin-left: 18px; font-size: 14px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+/* 44 px hit areas for thumbs; the visible text stays small. */
+nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 0 4px; margin-left: 14px;
+  font-size: 14px; color: var(--muted); text-decoration: none; white-space: nowrap; }
 nav a:hover { color: var(--peri-l); }
 
-.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding: 40px 0 72px; }
-.hero h1 { font: 500 clamp(44px, 7vw, 76px)/1.02 var(--serif); margin: 0 0 20px; letter-spacing: -.5px; }
+.hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: center; padding: 40px 0 72px; }
+/* Each sentence of the headline gets its own line on desktop; balance avoids a one-word orphan. */
+.hero h1 { font: 500 clamp(44px, 6.4vw, 72px)/1.02 var(--serif); margin: 0 0 20px; letter-spacing: -.5px;
+  text-wrap: balance; }
 .hero h1 .dark { color: var(--muted); }
 .lede { font-size: 17px; color: var(--muted); max-width: 34em; margin: 0 0 28px; }
 .lede strong { color: var(--text); font-weight: 600; }
-.badge { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px;
-  background: linear-gradient(180deg, #A9BCFF, var(--peri)); color: var(--ink1); font-weight: 600;
-  box-shadow: 0 0 34px rgba(143, 168, 255, .3); }
-.note { display: block; margin-top: 14px; font-size: 13px; color: var(--muted); }
-.belly { display: flex; gap: 14px; margin: 22px 0 0; padding: 0; list-style: none; }
+/* Launch state, not a button: no fill, no pill, a breathing periwinkle light like the fish's.
+   Periwinkle stays the action colour; nothing on the page pretends to be tappable. */
+.status { display: inline-flex; align-items: center; gap: 12px; margin: 0; padding: 10px 16px 10px 14px;
+  border-left: 2px solid var(--peri); border-radius: 0 10px 10px 0; background: rgba(143, 168, 255, .08);
+  color: var(--peri-l); font-weight: 600; font-size: 15px; cursor: default; }
+.pulse { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--peri-l);
+  box-shadow: 0 0 10px var(--peri), 0 0 22px rgba(143, 168, 255, .5); animation: breathe 2.8s ease-in-out infinite; }
+@keyframes breathe { 50% { opacity: .35; box-shadow: 0 0 4px var(--peri); } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+.promise { margin: 18px 0 0; font-weight: 600; color: var(--text); letter-spacing: .2px; }
+.note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+/* Belly lights draining left to right: reads as the game's glow meter, not a carousel pager. */
+.belly { display: flex; gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
 .belly li { width: 6px; height: 6px; border-radius: 50%; background: var(--peri-l); box-shadow: 0 0 8px var(--peri); }
-.phone { max-width: 320px; margin: 0 auto; border-radius: 34px; overflow: hidden; border: 1px solid var(--rim);
+.belly li:nth-child(5) { opacity: .6; }
+.belly li:nth-child(6) { opacity: .32; box-shadow: none; }
+.belly li:nth-child(7) { opacity: .16; box-shadow: none; }
+.phone { width: 100%; max-width: 320px; margin: 0 auto; border-radius: 34px; overflow: hidden; border: 1px solid var(--rim);
   box-shadow: 0 30px 80px rgba(0, 0, 0, .55), 0 0 60px rgba(143, 168, 255, .12); }
 
 section { padding: 56px 0; }
@@ -83,9 +98,20 @@ h2 { font: 500 clamp(32px, 4.6vw, 44px)/1.1 var(--serif); margin: 0 0 28px; }
 .faq dt { font-weight: 600; margin-top: 18px; }
 .faq dd { margin: 4px 0 0; color: var(--muted); }
 
-footer { border-top: 1px solid var(--rim); padding: 28px 0 48px; color: var(--muted); font-size: 14px;
-  display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
-footer a { color: var(--muted); }
+footer { border-top: 1px solid var(--rim); padding: 16px 0 36px; color: var(--muted); font-size: 14px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; justify-content: space-between; }
+footer a { display: inline-block; min-width: 44px; padding: 13px 2px; text-align: center; color: var(--muted); }
+
+/* Closing band: the page ends on the dark and the launch state, not on legal links. */
+.closing { margin: 24px 0 56px; padding: 72px 24px 64px; text-align: center; border: 1px solid var(--rim);
+  border-radius: 28px; background: radial-gradient(ellipse at 50% 0, rgba(143, 168, 255, .12), transparent 62%),
+  rgba(18, 10, 36, .55); }
+.closing h2 { margin: 18px 0 14px; text-wrap: balance; }
+.closing p { margin: 0 auto 26px; max-width: 34em; color: var(--muted); }
+.closing .status { margin: 0; color: var(--peri-l); }
+.eyes { display: inline-flex; gap: 14px; }
+.eyes i { width: 14px; height: 7px; border-radius: 50%; background: var(--ember);
+  box-shadow: 0 0 12px var(--ember), 0 0 26px rgba(255, 90, 60, .45); }
 
 /* Text pages. */
 .doc { max-width: 680px; padding: 24px 0 56px; }
@@ -101,5 +127,7 @@ footer a { color: var(--muted); }
   nav a { margin-left: 12px; }
 }
 @media (max-width: 480px) {
-  nav a[href^="#"] { display: none; }
+  nav a[href="#how"] { display: none; }
+  nav a { margin-left: 6px; }
+  .closing { padding: 56px 18px 48px; }
 }
