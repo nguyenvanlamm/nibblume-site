@@ -51,4 +51,4 @@ Progress is saved on your device. Purchases come back with *Settings → Restore
 
 ---
 
-[Support](https://nguyenvanlamm.github.io/nibblume-site/support.html.md) · [Privacy Policy](https://nguyenvanlamm.github.io/nibblume-site/privacy.html.md) · [Website](https://nguyenvanlamm.github.io/nibblume-site/) · © 2026 Nguyen Van Lam
+[Support](https://nguyenvanlamm.github.io/nibblume-site/support.html.md) · [Privacy Policy](https://nguyenvanlamm.github.io/nibblume-site/privacy.html.md) · [Website](https://nguyenvanlamm.github.io/nibblume-site/) · © 2026 Luong Nguyen
